@@ -1,5 +1,5 @@
 # wsgi.py
-from app import app as application  # Import the 'app' object from app.py
+from app import app
 
 if __name__ == "__main__":
-    application.run()
+    app.run()
