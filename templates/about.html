@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="flex space-x-8">
+    <!-- Sidebar -->
+    <aside class="w-2/5 card-bg p-6 rounded-lg shadow-lg">
+        <img src="/static/images/avatar.jpg" alt="Avatar" class="rounded-full mx-auto mb-4 h-65 w-48">
+        <h1 class="text-xl font-bold text-center">Nguyen Hoai Xuan Quang</h1>
+        <p class="text-gray-400 text-center">Software Implementation Intern</p>
+        <div class="inline-block mt-6 space-y-2 text-left">
+            <p><i class="fas fa-envelope accent-blue mr-2"></i><a href="mailto:nguyenhoaixuanquang08@gmail.com">nguyenhoaixuanquang08@gmail.com</p></a>
+            <p><i class="fas fa-phone accent-blue mr-2"></i> 0388458504</p>
+            <p><i class="fas fa-map-marker-alt accent-blue mr-2"></i> Dien Bien Phu, Thanh My Tay ward, Ho Chi Minh City</p>
+            <p><i class="fab fa-linkedin accent-blue mr-2"></i> <a href="https://linkedin.com/in/nguyen-quang-018xq/" class="accent-blue">LinkedIn</a></p>
+            <p><i class="fab fa-github accent-blue mr-2"></i> <a href="https://github.com/xuanquang0108/" class="accent-blue">GitHub</a></p>
+        </div>
+    </aside>
+
+    <!-- Main Section -->
+    <section class="w-3/4">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-300 mb-8">
+            A student in Information Technology with experience in database management projects and business applications. Proficient in SQL Server, .NET/ASP.NET, module deployment, schedule management, and user support. Eager to work in a software implementation position to learn ERP/PM deployment processes, customer support, and system configuration.
+        </p>
+
+        <h2 class="text-3xl font-bold mb-4">What I'm Doing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="card-bg p-6 rounded-lg shadow-lg">
+                <i class="fas fa-mobile-alt text-4xl accent-blue mb-4 block"></i>
+                <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                <p class="text-gray-400">Developing web applications using NextJS, Tailwind CSS, and Flask.</p>
+            </div>
+            <div class="card-bg p-6 rounded-lg shadow-lg">
+                <i class="fas fa-database text-4xl accent-blue mb-4 block"></i>
+                <h3 class="text-xl font-semibold mb-2">Database Management</h3>
+                <p class="text-gray-400">Proficient in MSSQL, database design, and stored procedures.</p>
+            </div>
+            <div class="card-bg p-6 rounded-lg shadow-lg">
+                <i class="fas fa-paint-brush text-4xl accent-blue mb-4 block"></i>
+                <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+                <p class="text-gray-400">Designing responsive interfaces with HTML, CSS, and Tailwind.</p>
+            </div>
+            <div class="card-bg p-6 rounded-lg shadow-lg">
+                <i class="fas fa-cogs text-4xl accent-blue mb-4 block"></i>
+                <h3 class="text-xl font-semibold mb-2">Software Implementation</h3>
+                <p class="text-gray-400">Deploying modules, supporting customers, and configuring systems.</p>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-4">Skills</h2>
+        <div class="flex flex-wrap gap-6">
+            <div class="card-bg p-4 rounded-lg shadow-lg text-center w-24">
+                <i class="fas fa-database text-3xl accent-blue mb-2"></i>
+                <p class="text-sm">MSSQL</p>
+            </div>
+            <div class="card-bg p-4 rounded-lg shadow-lg text-center w-24">
+                <i class="fab fa-css3-alt text-3xl accent-blue mb-2"></i>
+                <p class="text-sm">CSS</p>
+            </div>
+            <div class="card-bg p-4 rounded-lg shadow-lg text-center w-24">
+                <i class="fab fa-github text-3xl accent-blue mb-2"></i>
+                <p class="text-sm">GitHub</p>
+            </div>
+            <div class="card-bg p-4 rounded-lg shadow-lg text-center w-24">
+                <i class="fab fa-html5 text-3xl accent-blue mb-2"></i>
+                <p class="text-sm">HTML5</p>
+            </div>
+            <div class="card-bg p-4 rounded-lg shadow-lg text-center w-24">
+                <i class="fab fa-python text-3xl accent-blue mb-2"></i>
+                <p class="text-sm">Python</p>
+            </div>
+            <div class="card-bg p-4 rounded-lg shadow-lg text-center w-24">
+                <i class="fab fa-react text-3xl accent-blue mb-2"></i>
+                <p class="text-sm">NextJS</p>
+            </div>
+        </div>
+        <div class="h-1 accent-line mt-4 rounded"></div>
+    </section>
+</div>
+{% endblock %}

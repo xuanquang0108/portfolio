@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ current_page }} - Nguyen Hoai Xuan Quang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #111827; color: #f3f4f6; font-family: 'Source Code Pro', monospace; }
+        .accent-blue { color: #3b82f6; }
+        .accent-bg { background-color: #3b82f6; }
+        .accent-line { background-color: #3b82f6; }
+        .nav-link { color: #f3f4f6; }
+        .nav-link:hover, .nav-active { color: #3b82f6; }
+        .card-bg { background-color: #1f2937; }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="card-bg p-4 flex justify-end space-x-6 rounded-b-lg shadow-lg">
+        <a href="/" class="nav-link {% if current_page == 'About' %}nav-active{% endif %}">About</a>
+        <a href="/resume" class="nav-link {% if current_page == 'Resume' %}nav-active{% endif %}">Resume</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-8 max-w-7xl mx-auto">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="card-bg p-4 text-center text-gray-500 rounded-t-lg shadow-lg mt-8">
+        &copy; 2025 Nguyen Hoai Xuan Quang. All rights reserved.
+    </footer>
+</body>
+</html>
