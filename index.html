@@ -14,11 +14,15 @@
 <body class="antialiased">
 
   <!-- Header -->
-  <?php include 'header.html'; ?>
+ <header class="bg-gray-800 p-4 flex justify-end space-x-6 rounded-b-lg shadow-lg">
+  <a href="about.html" class="text-gray-200 hover:text-blue-500">About</a>
+  <a href="resume.html" class="text-gray-200 hover:text-blue-500">Resume</a>
+</header>
+
 <div class="flex space-x-8">
     <!-- Sidebar -->
     <aside class="w-2/5 card-bg p-6 rounded-lg shadow-lg">
-        <img src="/images/avatar.jpg" alt="Avatar" class="rounded-full mx-auto mb-4 h-65 w-48">
+        <img src="images/avatar.jpg" alt="Avatar" class="rounded-full mx-auto mb-4 h-65 w-48">
         <h1 class="text-xl font-bold text-center">Nguyen Hoai Xuan Quang</h1>
         <p class="text-gray-400 text-center">Software Implementation Intern</p>
         <div class="inline-block mt-6 space-y-2 text-left">
@@ -93,7 +97,10 @@
 </div>
 
 <!-- Footer -->
-  <?php include 'footer.html'; ?>
+ <footer class="bg-gray-800 p-4 text-center text-gray-500 rounded-t-lg shadow-lg mt-8">
+  &copy; 2025 Nguyen Hoai Xuan Quang. All rights reserved.
+</footer>
+
 
 </body>
 </html>
