@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Nguyen Hoai Xuan Quang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #111827; color: #f3f4f6; font-family: 'Source Code Pro', monospace; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Header -->
+  <?php include 'header.html'; ?>
+
+  <!-- Main -->
+  <main class="p-8 max-w-5xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8 text-blue-500">Resume</h1>
+
+    <!-- Education -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-4"><i class="fas fa-graduation-cap text-blue-500 mr-2"></i> Education</h2>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative pl-8">
+        <h3 class="text-xl font-semibold">Open University of Ho Chi Minh City</h3>
+        <p class="text-gray-400">Bachelor - Management Information Systems</p>
+        <p class="text-gray-400">10/2022 - 06/2026</p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-4"><i class="fas fa-briefcase text-blue-500 mr-2"></i> Experience</h2>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative pl-8">
+        <h3 class="text-xl font-semibold">Freelance Designer - Fiverr</h3>
+        <p class="text-gray-400">08/2022 - Present</p>
+        <ul class="list-disc pl-5 text-gray-300 mt-2">
+          <li>Manage customer requirements, handle feedback, ensure delivery progress.</li>
+          <li>Develop communication skills with customers, ticket management, and workflow.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2 class="text-3xl font-bold mb-4"><i class="fas fa-project-diagram text-blue-500 mr-2"></i> Notable Projects</h2>
+      
+      <div class="space-y-8">
+        <!-- Project 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative pl-8">
+          <a href="https://github.com/xuanquang0108/CollabSkoo">
+            <h3 class="text-xl font-semibold">CollabSkoo (Personal Project)</h3>
+          </a>
+          <p class="text-gray-400">06/2025 - Present</p>
+          <p class="text-gray-400">Tech: NextJS, MySQL, Tailwind CSS, Git.</p>
+          <ul class="list-disc pl-5 text-gray-300 mt-2">
+            <li>Frontend + backend development (solo) — UI/UX design, authentication implementation, upload function.</li>
+            <li>Completed: Responsive homepage, register/login/logout, reset password, file upload mechanism.</li>
+            <li>Ongoing: Storage & file management system, access permissions, upload security optimization.</li>
+            <li>Result: Stable in development environment.</li>
+          </ul>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative pl-8">
+          <a href="https://github.com/xuanquang0108/QLDAPM">
+            <h3 class="text-xl font-semibold">JobNest - Job Portal</h3>
+          </a>
+          <p class="text-gray-400">08/2025 - 09/2025</p>
+          <p class="text-gray-400">Tech: Python Flask, HTML, Tailwind CSS, MySQL.</p>
+          <ul class="list-disc pl-5 text-gray-300 mt-2">
+            <li>Main frontend developer + light backend contribution.</li>
+            <li>Homepage design, notification module, responsive UI; integrate Flask backend for login/register.</li>
+            <li>Achievement: Friendly interface, basic notification system.</li>
+          </ul>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative pl-8">
+          <a href="https://github.com/Truong-Thai-Bao/Clinic">
+            <h3 class="text-xl font-semibold">Clinic Management System</h3>
+          </a>
+          <p class="text-gray-400">03/2025 - 05/2025</p>
+          <p class="text-gray-400">Tech: .NET, ASP.NET, SQL Server (3-layer model).</p>
+          <ul class="list-disc pl-5 text-gray-300 mt-2">
+            <li>Implemented appointment booking, management, revenue statistics, password reset.</li>
+            <li>DB design, stored procedures, query optimization, management interface, reports.</li>
+            <li>Result: Completed appointment and report modules.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <?php include 'footer.html'; ?>
+
+</body>
+</html>

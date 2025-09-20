@@ -1,10 +1,24 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Nguyen Hoai Xuan Quang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #111827; color: #f3f4f6; font-family: 'Source Code Pro', monospace; }
+  </style>
+</head>
+<body class="antialiased">
 
-{% block content %}
+  <!-- Header -->
+  <?php include 'header.html'; ?>
 <div class="flex space-x-8">
     <!-- Sidebar -->
     <aside class="w-2/5 card-bg p-6 rounded-lg shadow-lg">
-        <img src="/static/images/avatar.jpg" alt="Avatar" class="rounded-full mx-auto mb-4 h-65 w-48">
+        <img src="/images/avatar.jpg" alt="Avatar" class="rounded-full mx-auto mb-4 h-65 w-48">
         <h1 class="text-xl font-bold text-center">Nguyen Hoai Xuan Quang</h1>
         <p class="text-gray-400 text-center">Software Implementation Intern</p>
         <div class="inline-block mt-6 space-y-2 text-left">
@@ -77,4 +91,9 @@
         <div class="h-1 accent-line mt-4 rounded"></div>
     </section>
 </div>
-{% endblock %}
+
+<!-- Footer -->
+  <?php include 'footer.html'; ?>
+
+</body>
+</html>
